@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Decoder</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Message Encryption/Decription Tool</h1>
+      <div id="encoder" class="row">
+        <div class="col">
+          <input
+            id="encodedInput"
+            type="text"
+            placeholder="Enter Message Here..."
+          />
+        </div>
+        <div class="col-sm-4">
+          <button id="encodeMessage" type="submit" onclick="encode()">
+            Code This Message
+          </button>
+        </div>
+        <div id="encoderOutputBox" class="col"></div>
+      </div>
+
+      <div id="decoder" class="row">
+        <div id="decoderOutputBox" class="col"></div>
+        <div class="col-sm-4">
+          <button id="decodeMessage" type="submit" onclick="decode()">
+            Decode This Message
+          </button>
+        </div>
+        <div class="col">
+          <input
+            id="decodedInput"
+            type="text"
+            placeholder="...Enter Coded Message Here"
+          />
+        </div>
+      </div>
+      <div id="resetBtn" class="col-sm-12">
+        <button id="reset" type="submit" onclick="resetForm()">Reset</button>
+      </div>
+    </div>
+
+    <script src="./index2.js"></script>
+  </body>
+</html>
